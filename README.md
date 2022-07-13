@@ -27,17 +27,18 @@ Which variables are significant in predicting the demand for shared bikes.
 How well those variables describe the bike demands
 Based on various meteorological surveys and people's styles, the service provider firm has gathered a large dataset on daily bike demands across the American market based on some factors. 
 
-## --Business Goal:
-You are required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market. 
-
-
+ 
 ## Conclusions
-- We can see the demand for bikes depends mainly on below variables:
-yr, workingday, windspeed, spring, (Light Snow/Light Rain + Thunderstorm + Scattered clouds/Light Rain + Scattered clouds), (X Mist + Cloudy/Mist + Broken clouds/Mist + Few clouds/Mist) ,
-Sunday, 2,3,4,5,6,7,8,9,10,11,12
-1. Demand increases with workingday, Sunday, 2,3,4,5,6,7,8,9,10,11,12
-Demand decreases with windspeed, spring, (Light Snow/Light Rain + Thunderstorm + Scattered clouds/Light Rain + Scattered clouds), (Mist + Cloudy/Mist + Broken clouds/Mist + Few clouds/Mist) 
-2. Demand is high in the months 4,5,6,7,8,9,10
+# The equation of best fitted line is 
+
+cnt= 0.2470(yr) + 0.0547(workingday) - 0.1666(windspeed) - 0.1180(spring) - 0.3041(Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds) - 0.0889(Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist) + 0.0614(Saturday) + 0.1159('3') + 0.1310('4') + 0.2125('5') + 0.2376('6') + 0.2106('7') + 0.2363('8') + 0.2720('9') + 0.2052('10') + 0.1014('11')+ 0.0610('12')
+
+# Demand of bike depends on the variables below
+
+yr, workingday, windspeed, spring, Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds, Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist, Saturday, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+
+the demand for bikes increases on workingday, saturday, in the months of 3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,12
+the demand for bikes decreases with windspeed, spring, Light Snow, (Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds), (Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist) conditions
 
 
 ## Technologies Used
